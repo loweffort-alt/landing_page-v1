@@ -1,0 +1,19 @@
+name: Deployment
+
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: action/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: action/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Install dependencies
+        run: npm install --no-autid --no-found --no-optional
+      - name: Deploy init
+        run: npm run deploy
