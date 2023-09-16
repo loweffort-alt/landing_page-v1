@@ -32,7 +32,7 @@ jobs:
     # Deploy to the github-pages environment
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://loweffort-alt.github.io/landing_page-v1/
 
     # Specify runner + deployment step
     runs-on: ubuntu-latest
