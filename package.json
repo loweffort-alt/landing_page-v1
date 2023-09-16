@@ -2,7 +2,6 @@
   "name": "atom-html",
   "version": "2.0.0",
   "author": "Red Pixel Themes",
-  "private": true,
   "scripts": {
     "css": "postcss assets/styles/main.css -o assets/styles/main.min.css --verbose",
     "server-reload": "browser-sync start --config ./browser-sync-config.js",

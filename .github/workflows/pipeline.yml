@@ -19,6 +19,4 @@ jobs:
       - name: Install dependencies
         run: npm install --no-audit --no-fund --no-optional
       - name: Run a multiline script
-        run: |
-          echo test the checkout action,
-          ls -a
+        run: npm run build
